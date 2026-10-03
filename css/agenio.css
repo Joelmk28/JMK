@@ -318,7 +318,7 @@ p { margin: 0 0 1em; color: var(--muted); }
     font-size: 20px;
     color: var(--accent-text);
 }
-.partner-logo img { position: absolute; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: contain; background: #fff; }
+.partner-logo img { position: absolute; inset: 6px; width: calc(100% - 12px); height: calc(100% - 12px); object-fit: contain; background: #fff; }
 .partner-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .partner-body strong { font-family: var(--font-head); font-size: 24px; line-height: 1.2; color: var(--text); }
 .partner-role { font-size: 14px; color: var(--muted); }
