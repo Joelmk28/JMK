@@ -592,8 +592,17 @@ p { margin: 0 0 1em; color: var(--muted); }
     text-align: center;
     color: transparent;
     -webkit-text-stroke: 1px var(--border-strong);
-    margin: 0 0 50px;
+    margin: 0 0 16px;
     user-select: none;
+}
+.footer-tagline {
+    text-align: center;
+    font-family: var(--font-head);
+    font-size: clamp(18px, 2.4vw, 30px);
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: var(--accent-text);
+    margin: 0 0 50px;
 }
 .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
 .footer-bottom p { margin: 0; font-size: 14px; }
