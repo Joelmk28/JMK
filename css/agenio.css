@@ -294,12 +294,10 @@ p { margin: 0 0 1em; color: var(--muted); }
     display: flex;
     align-items: center;
     gap: 22px;
-    padding: 26px 28px;
-    border-radius: var(--radius);
-    background: var(--surface-2);
-    transition: transform .3s ease, box-shadow .3s ease;
+    padding: 12px 0;
+    transition: transform .3s ease;
 }
-.partner:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.partner:hover { transform: translateY(-4px); }
 .partner-logo {
     position: relative;
     flex: 0 0 72px;
