@@ -280,7 +280,7 @@ p { margin: 0 0 1em; color: var(--muted); }
 .counter strong { font-family: var(--font-head); font-size: clamp(40px, 5vw, 60px); line-height: 1; display: block; margin-bottom: 8px; }
 .counter span { color: var(--muted); font-size: 14px; }
 
-.partners { margin-top: 100px; position: relative; z-index: 1; }
+.partners { margin-bottom: 110px; position: relative; z-index: 1; }
 .partners-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 90px; }
 .partner {
     display: flex;
