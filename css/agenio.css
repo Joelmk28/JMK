@@ -280,16 +280,8 @@ p { margin: 0 0 1em; color: var(--muted); }
 .counter strong { font-family: var(--font-head); font-size: clamp(40px, 5vw, 60px); line-height: 1; display: block; margin-bottom: 8px; }
 .counter span { color: var(--muted); font-size: 14px; }
 
-.partners { margin-top: 56px; position: relative; z-index: 1; }
-.partners-title {
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    color: var(--muted);
-    margin-bottom: 18px;
-}
-.partners-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.partners { margin-top: 100px; position: relative; z-index: 1; }
+.partners-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 90px; }
 .partner {
     display: flex;
     align-items: center;
