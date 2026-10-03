@@ -21,7 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- Theme Stylesheet -->
-    <link href="css/agenio.css?v=20261003e" rel="stylesheet">
+    <link href="css/agenio.css?v=20261004" rel="stylesheet">
 </head>
 
 <body>
@@ -31,16 +31,20 @@
         <div class="container">
             <a href="#home" class="logo">JMK<span>.</span></a>
             <nav class="nav" id="nav">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#service">Services</a>
-                <a href="#qualification">Journey</a>
-                <a href="#skill">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#testimonial">Reviews</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="active" data-i18n="nav.home">Home</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#service" data-i18n="nav.services">Services</a>
+                <a href="#qualification" data-i18n="nav.journey">Journey</a>
+                <a href="#skill" data-i18n="nav.skills">Skills</a>
+                <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+                <a href="#testimonial" data-i18n="nav.reviews">Reviews</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
             </nav>
-            <a href="tel:+243997916872" class="btn btn--primary header-cta">Call me <span class="btn-icon"><i class="fas fa-phone-alt"></i></span></a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="fr">FR</button>
+            </div>
+            <a href="tel:+243997916872" class="btn btn--primary header-cta"><span data-i18n="btn.call">Call me</span> <span class="btn-icon"><i class="fas fa-phone-alt"></i></span></a>
             <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
         </div>
     </header>
@@ -51,19 +55,19 @@
     <section class="hero section" id="home">
         <div class="container hero-grid">
             <div class="hero-content reveal">
-                <h1 class="hero-title">Software <span class="accent-text">engineer</span><br><span class="outline">building</span> solutions</h1>
-                <div class="hero-typed">I'm a <span class="typed-text-output"></span></div>
-                <p class="hero-text">I design and build web, mobile and desktop applications that improve people's lives and transform businesses — with rigor, best practices and an unwavering commitment to excellence.</p>
+                <h1 class="hero-title" data-i18n="hero.title">Software <span class="accent-text">engineer</span><br><span class="outline">building</span> solutions</h1>
+                <div class="hero-typed"><span data-i18n="hero.im">I'm a</span> <span class="typed-text-output"></span></div>
+                <p class="hero-text" data-i18n="hero.text">I design and build web, mobile and desktop applications that improve people's lives and transform businesses — with rigor, best practices and an unwavering commitment to excellence.</p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn--primary">Let's work together <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
-                    <a href="#portfolio" class="btn btn--ghost">See my work <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#contact" class="btn btn--primary"><span data-i18n="btn.work">Let's work together</span> <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#portfolio" class="btn btn--ghost"><span data-i18n="btn.seework">See my work</span> <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
                 </div>
             </div>
             <div class="hero-visual reveal">
                 <div class="rotating-badge" aria-hidden="true">
                     <svg viewBox="0 0 120 120">
                         <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"></path></defs>
-                        <text><textPath href="#circlePath">Available for freelance • Full stack •</textPath></text>
+                        <text><textPath href="#circlePath" data-i18n="hero.badge">Available for freelance • Full stack •</textPath></text>
                     </svg>
                     <span class="center"><i class="fas fa-arrow-down"></i></span>
                 </div>
@@ -79,8 +83,8 @@
     <!-- Marquee Start -->
     <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-            <div class="marquee-item">Web Developer <i class="fas fa-star-of-life"></i> iOS Developer <i class="fas fa-star-of-life"></i> Android Developer <i class="fas fa-star-of-life"></i> Desktop Developer <i class="fas fa-star-of-life"></i> Full Stack <i class="fas fa-star-of-life"></i> Trader <i class="fas fa-star-of-life"></i></div>
-            <div class="marquee-item">Web Developer <i class="fas fa-star-of-life"></i> iOS Developer <i class="fas fa-star-of-life"></i> Android Developer <i class="fas fa-star-of-life"></i> Desktop Developer <i class="fas fa-star-of-life"></i> Full Stack <i class="fas fa-star-of-life"></i> Trader <i class="fas fa-star-of-life"></i></div>
+            <div class="marquee-item" data-i18n="marquee.roles">Web Developer <i class="fas fa-star-of-life"></i> iOS Developer <i class="fas fa-star-of-life"></i> Android Developer <i class="fas fa-star-of-life"></i> Desktop Developer <i class="fas fa-star-of-life"></i> Full Stack <i class="fas fa-star-of-life"></i> Trader <i class="fas fa-star-of-life"></i></div>
+            <div class="marquee-item" data-i18n="marquee.roles">Web Developer <i class="fas fa-star-of-life"></i> iOS Developer <i class="fas fa-star-of-life"></i> Android Developer <i class="fas fa-star-of-life"></i> Desktop Developer <i class="fas fa-star-of-life"></i> Full Stack <i class="fas fa-star-of-life"></i> Trader <i class="fas fa-star-of-life"></i></div>
         </div>
     </div>
     <div class="marquee marquee--alt" aria-hidden="true">
@@ -97,14 +101,14 @@
         <div class="container">
             <div class="partners reveal">
                 <div class="section-head section-head--center">
-                    <h2 class="section-title">Consultant <span class="accent-text">attached to</span></h2>
+                    <h2 class="section-title" data-i18n="partners.title">Consultant <span class="accent-text">attached to</span></h2>
                 </div>
                 <div class="partners-grid">
                     <a class="partner" href="https://bcs-rdc.com/" target="_blank" rel="noopener">
                         <span class="partner-logo" data-initials="BCS"><img src="https://www.google.com/s2/favicons?domain=bcs-rdc.com&amp;sz=128" alt="BCS-RDC logo" onerror="this.remove()" onload="if (this.naturalWidth &lt; 48) this.remove()"></span>
                         <span class="partner-body">
                             <strong>BCS-RDC</strong>
-                            <span class="partner-role">IT Consultant</span>
+                            <span class="partner-role" data-i18n="partners.role">IT Consultant</span>
                             <span class="partner-url">bcs-rdc.com <i class="fas fa-arrow-right"></i></span>
                         </span>
                     </a>
@@ -112,7 +116,7 @@
                         <span class="partner-logo" data-initials="JT"><img src="img/jovytech-logo.png" alt="Jovytech logo"></span>
                         <span class="partner-body">
                             <strong>Jovytech</strong>
-                            <span class="partner-role">IT Consultant</span>
+                            <span class="partner-role" data-i18n="partners.role">IT Consultant</span>
                             <span class="partner-url">jovytech.com <i class="fas fa-arrow-right"></i></span>
                         </span>
                     </a>
@@ -124,36 +128,36 @@
                     <img src="img/joelChoix1.jpg" alt="Joel MUHINDO KIRENGO">
                     <div class="exp-badge">
                         <strong class="accent-text">3+</strong>
-                        <span>Years of experience</span>
+                        <span data-i18n="about.years">Years of experience</span>
                     </div>
                 </div>
                 <div class="reveal">
-                    <h2 class="section-title">Passionate about solving <span class="accent-text">complex &amp; simple</span> problems</h2>
-                    <p>As a software engineer, I am passionate about solving both complex and simple problems and creating innovative solutions. With the experience I have gained so far in software development, I have developed a particular expertise in various programming languages and technologies.</p>
-                    <p>Don’t hesitate to give me new opportunities to contribute to the software inputs in your companies and to the advancement of technology. My goal is to create software that improves people’s lives and transforms businesses. I am recognized for my ability to work in a team and even alone. My rigor and commitment to excellence are unwavering.</p>
+                    <h2 class="section-title" data-i18n="about.title">Passionate about solving <span class="accent-text">complex &amp; simple</span> problems</h2>
+                    <p data-i18n="about.p1">As a software engineer, I am passionate about solving both complex and simple problems and creating innovative solutions. With the experience I have gained so far in software development, I have developed a particular expertise in various programming languages and technologies.</p>
+                    <p data-i18n="about.p2">Don’t hesitate to give me new opportunities to contribute to the software inputs in your companies and to the advancement of technology. My goal is to create software that improves people’s lives and transforms businesses. I am recognized for my ability to work in a team and even alone. My rigor and commitment to excellence are unwavering.</p>
                     <div class="info-list">
-                        <div><span>Name</span><strong>MUHINDO KIRENGO Joel</strong></div>
-                        <div><span>Birthday</span><strong>28-11-2001</strong></div>
-                        <div><span>Degree</span><strong>LICENCE</strong></div>
-                        <div><span>Experience</span><strong>3 Years</strong></div>
-                        <div><span>Phone</span><strong>+243 997916872</strong></div>
-                        <div><span>Email</span><strong>joelmuhindok@gmail.com</strong></div>
-                        <div><span>Address</span><strong>10B Maindombe, Kinsuka Pecheur, Ngaliema, Kinshasa</strong></div>
+                        <div><span data-i18n="info.name">Name</span><strong>MUHINDO KIRENGO Joel</strong></div>
+                        <div><span data-i18n="info.birthday">Birthday</span><strong>28-11-2001</strong></div>
+                        <div><span data-i18n="info.degree">Degree</span><strong>LICENCE</strong></div>
+                        <div><span data-i18n="info.experience">Experience</span><strong data-i18n="info.expval">3 Years</strong></div>
+                        <div><span data-i18n="info.phone">Phone</span><strong>+243 997916872</strong></div>
+                        <div><span data-i18n="info.email">Email</span><strong>joelmuhindok@gmail.com</strong></div>
+                        <div><span data-i18n="info.address">Address</span><strong>10B Maindombe, Kinsuka Pecheur, Ngaliema, Kinshasa</strong></div>
                         <div><span>Consultant</span><strong><a href="https://bcs-rdc.com/" style="color:var(--accent-text)">BCS-RDC</a> · <a href="https://jovytech.com/" style="color:var(--accent-text)">Jovytech</a></strong></div>
-                        <div><span>Freelance</span><strong style="color:#2e9e44">Available</strong></div>
+                        <div><span>Freelance</span><strong style="color:#2e9e44" data-i18n="info.available">Available</strong></div>
                     </div>
                     <div class="hero-actions">
-                        <a href="tel:+243997916872" class="btn btn--primary">Call me <span class="btn-icon"><i class="fas fa-phone-alt"></i></span></a>
-                        <a href="#service" class="btn btn--ghost">Learn more <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
+                        <a href="tel:+243997916872" class="btn btn--primary"><span data-i18n="btn.call">Call me</span> <span class="btn-icon"><i class="fas fa-phone-alt"></i></span></a>
+                        <a href="#service" class="btn btn--ghost"><span data-i18n="btn.more">Learn more</span> <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
 
             <div class="counters">
-                <div class="counter reveal"><strong class="accent-text" data-count="3">0</strong><span>Years of experience</span></div>
-                <div class="counter reveal"><strong class="accent-text" data-count="7">0</strong><span>Services offered</span></div>
-                <div class="counter reveal"><strong class="accent-text" data-count="14">0</strong><span>Technologies mastered</span></div>
-                <div class="counter reveal"><strong class="accent-text" data-count="3">0</strong><span>Happy clients reviews</span></div>
+                <div class="counter reveal"><strong class="accent-text" data-count="3">0</strong><span data-i18n="about.years">Years of experience</span></div>
+                <div class="counter reveal"><strong class="accent-text" data-count="7">0</strong><span data-i18n="count.services">Services offered</span></div>
+                <div class="counter reveal"><strong class="accent-text" data-count="14">0</strong><span data-i18n="count.tech">Technologies mastered</span></div>
+                <div class="counter reveal"><strong class="accent-text" data-count="3">0</strong><span data-i18n="count.reviews">Happy clients reviews</span></div>
             </div>
 
         </div>
@@ -165,55 +169,55 @@
     <section class="section services" id="service">
         <div class="container">
             <div class="section-head section-head--center reveal">
-                <h2 class="section-title">What I can <span class="accent-text">build for you</span></h2>
+                <h2 class="section-title" data-i18n="services.title">What I can <span class="accent-text">build for you</span></h2>
             </div>
             <div class="services-grid">
                 <article class="service-card reveal">
                     <span class="num">01</span>
                     <div class="service-icon"><i class="fas fa-edit"></i></div>
-                    <h3>Showcase site</h3>
-                    <p>See this site you're on now? It is also a showcase site. So, in this service, I create showcase sites for you that highlight your business or brand. The goal is to create a website that accurately reflects your brand image and helps you achieve your business objectives.</p>
+                    <h3 data-i18n="s1.t">Showcase site</h3>
+                    <p data-i18n="s1.p">See this site you're on now? It is also a showcase site. So, in this service, I create showcase sites for you that highlight your business or brand. The goal is to create a website that accurately reflects your brand image and helps you achieve your business objectives.</p>
                 </article>
                 <article class="service-card reveal">
                     <span class="num">02</span>
                     <div class="service-icon"><i class="fas fa-laptop"></i></div>
-                    <h3>Front-end</h3>
-                    <p>You are a Backend developer or not and you need to create or modify interfaces for your system. In this service, I offer you responsive web interfaces with exceptional user experience.</p>
+                    <h3 data-i18n="s2.t">Front-end</h3>
+                    <p data-i18n="s2.p">You are a Backend developer or not and you need to create or modify interfaces for your system. In this service, I offer you responsive web interfaces with exceptional user experience.</p>
                 </article>
                 <article class="service-card reveal">
                     <span class="num">03</span>
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Back-end</h3>
-                    <p>You are a Front developer, you just need good logic to manage your system? I take care of it and provide you with the server logic, database definition and manipulation and of course, I provide you with reliable and secure APIs.</p>
+                    <h3 data-i18n="s3.t">Back-end</h3>
+                    <p data-i18n="s3.p">You are a Front developer, you just need good logic to manage your system? I take care of it and provide you with the server logic, database definition and manipulation and of course, I provide you with reliable and secure APIs.</p>
                 </article>
                 <article class="service-card reveal">
                     <span class="num">04</span>
                     <div class="service-icon"><i class="fab fa-android"></i></div>
-                    <h3>Android Apps</h3>
-                    <p>In this service, I will develop Android applications based on best development practices for applications that are both functional and attractive.</p>
+                    <h3 data-i18n="s4.t">Android Apps</h3>
+                    <p data-i18n="s4.p">In this service, I will develop Android applications based on best development practices for applications that are both functional and attractive.</p>
                 </article>
                 <article class="service-card reveal">
                     <span class="num">05</span>
                     <div class="service-icon"><i class="fab fa-apple"></i></div>
-                    <h3>iOS Apps</h3>
-                    <p>An application that only runs on Android is good. But also imagine that the same application is running under iOS (iPhone). I'm not talking about the number of users you're going to reach... In this service, it's about creating applications that fully exploit the unique features of Apple devices.</p>
+                    <h3 data-i18n="s5.t">iOS Apps</h3>
+                    <p data-i18n="s5.p">An application that only runs on Android is good. But also imagine that the same application is running under iOS (iPhone). I'm not talking about the number of users you're going to reach... In this service, it's about creating applications that fully exploit the unique features of Apple devices.</p>
                 </article>
                 <article class="service-card reveal">
                     <span class="num">06</span>
                     <div class="service-icon"><i class="fas fa-desktop"></i></div>
-                    <h3>Desktop Apps</h3>
-                    <p>Do you want intensive productivity, offline access, data security and feature-demanding needs? I offer the development of powerful and easy-to-use desktop applications for Windows and macOS.</p>
+                    <h3 data-i18n="s6.t">Desktop Apps</h3>
+                    <p data-i18n="s6.p">Do you want intensive productivity, offline access, data security and feature-demanding needs? I offer the development of powerful and easy-to-use desktop applications for Windows and macOS.</p>
                 </article>
                 <article class="service-card service-card--wide reveal">
                     <span class="num">07</span>
                     <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
-                    <h3>Trading Forex</h3>
-                    <p>This service offers an investment opportunity in the Forex market. As an experienced trader, I manage investors’ funds with caution and expertise. Investors are invited to invest their money, which will then be used for trading in the Forex market. Profits will be shared based on an agreed percentage. This service is designed for those looking to invest in Forex but do not have the time or expertise to do so themselves. It offers a transparent and professional way to invest in the Forex market.</p>
+                    <h3 data-i18n="s7.t">Trading Forex</h3>
+                    <p data-i18n="s7.p">This service offers an investment opportunity in the Forex market. As an experienced trader, I manage investors’ funds with caution and expertise. Investors are invited to invest their money, which will then be used for trading in the Forex market. Profits will be shared based on an agreed percentage. This service is designed for those looking to invest in Forex but do not have the time or expertise to do so themselves. It offers a transparent and professional way to invest in the Forex market.</p>
                 </article>
                 <article class="service-card reveal" style="display:flex;flex-direction:column;justify-content:center;">
-                    <h3>Have a project in mind?</h3>
-                    <p style="margin-bottom:24px;">Tell me about it — let's build something great together.</p>
-                    <div><a href="#contact" class="btn btn--primary">Contact me <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a></div>
+                    <h3 data-i18n="s8.t">Have a project in mind?</h3>
+                    <p style="margin-bottom:24px;" data-i18n="s8.p">Tell me about it — let's build something great together.</p>
+                    <div><a href="#contact" class="btn btn--primary"><span data-i18n="btn.contact">Contact me</span> <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a></div>
                 </article>
             </div>
         </div>
@@ -225,29 +229,29 @@
     <section class="section" id="qualification">
         <div class="container">
             <div class="section-head reveal">
-                <h2 class="section-title">My <span class="accent-text">journey</span> so far</h2>
+                <h2 class="section-title" data-i18n="journey.title">My <span class="accent-text">journey</span> so far</h2>
             </div>
             <div class="journey-grid">
                 <article class="journey-card reveal">
-                    <span class="tag"><i class="fas fa-graduation-cap"></i> &nbsp;My Education</span>
-                    <h3>Bachelor of Software Engineering</h3>
-                    <div class="meta"><strong>University Of Science and Technology</strong><span class="year">2019 - 2024</span></div>
-                    <p>I had the privilege of studying at the <a href="https://ascitech.cd/universite">University of Science and Technology (USCITECH)</a>, where I received a solid education in software engineering. My academic journey at USCITECH allowed me to develop a deep understanding of the fundamental principles of computer science, as well as practical skills in programming. I had the opportunity to work on challenging university projects that strengthened my ability to design and implement effective software solutions. My experience at USCITECH was instrumental in shaping my career as a software engineer.</p>
+                    <span class="tag"><i class="fas fa-graduation-cap"></i> &nbsp;<span data-i18n="journey.edu">My Education</span></span>
+                    <h3 data-i18n="edu.t">Bachelor of Software Engineering</h3>
+                    <div class="meta"><strong data-i18n="edu.school">University of Science and Technology</strong><span class="year">2019 - 2024</span></div>
+                    <p data-i18n="edu.p">I had the privilege of studying at the <a href="https://ascitech.cd/universite">University of Science and Technology (USCITECH)</a>, where I received a solid education in software engineering. My academic journey at USCITECH allowed me to develop a deep understanding of the fundamental principles of computer science, as well as practical skills in programming. I had the opportunity to work on challenging university projects that strengthened my ability to design and implement effective software solutions. My experience at USCITECH was instrumental in shaping my career as a software engineer.</p>
                 </article>
                 <article class="journey-card reveal">
-                    <span class="tag"><i class="fas fa-briefcase"></i> &nbsp;My Experience</span>
-                    <h3>Web developer intern</h3>
+                    <span class="tag"><i class="fas fa-briefcase"></i> &nbsp;<span data-i18n="journey.exp">My Experience</span></span>
+                    <h3 data-i18n="exp.t">Web developer intern</h3>
                     <div class="meta"><strong>Infoset</strong><span class="year">2023</span></div>
-                    <p>During my journey as a software developer, I had the opportunity to intern at <a href="https://www.infoset.cd/">Infoset</a>, an experience that was extremely valuable to me. At Infoset, I was able to apply my technical skills while learning new work methodologies. I worked on challenging projects that allowed me to understand the importance of collaboration and communication in a professional environment. This experience not only allowed me to strengthen my technical skills, but also honed my ability to solve complex problems and work effectively as part of a team. In short, my internship at Infoset was a pivotal step in my career as a software developer.</p>
+                    <p data-i18n="exp.p">During my journey as a software developer, I had the opportunity to intern at <a href="https://www.infoset.cd/">Infoset</a>, an experience that was extremely valuable to me. At Infoset, I was able to apply my technical skills while learning new work methodologies. I worked on challenging projects that allowed me to understand the importance of collaboration and communication in a professional environment. This experience not only allowed me to strengthen my technical skills, but also honed my ability to solve complex problems and work effectively as part of a team. In short, my internship at Infoset was a pivotal step in my career as a software developer.</p>
                 </article>
             </div>
 
             <article class="featured reveal">
                 <div>
-                    <span class="kicker">Actuel gros marché</span>
+                    <span class="kicker" data-i18n="feat.kicker">Current major contract</span>
                     <h3>Engagement Paie</h3>
                     <div class="meta"><strong>Ministère de la Fonction Publique, Modernisation de l’Administration et Innovation du Service Public</strong> &nbsp;·&nbsp; 2024</div>
-                    <p>Une application web tournant sur le serveur local, Windows Server, sous IIS, en production. Je l'ai développée en <a href="https://dotnet.microsoft.com/fr-fr/">.NET</a>, une infrastructure multiplateforme de Microsoft ; elle assure rapidité, scalabilité, robustesse,... avec des bonnes pratiques. Cette application gère les enregistrements des nouveaux agents de l'État pour qu'ils soient mécanisés (profiter des salaires de base de l'État par rapport au matricule attribué par son administration), les corrections des noms, corrections des matricules, réajustements de grade, changements d'adresses, blocages et déblocages des agents déjà mécanisés. Ces modules restent très complexes et intéressants du point de vue développement.</p>
+                    <p data-i18n="feat.p">A web application running on a local server (Windows Server, under IIS), in production. I developed it in <a href="https://dotnet.microsoft.com/">.NET</a>, Microsoft’s cross-platform framework; it delivers speed, scalability and robustness, built with best practices. The application handles the registration of new civil servants so they can be put on the State payroll (receiving the base salary linked to the registration number assigned by their administration), as well as name corrections, registration-number corrections, grade adjustments, address changes, and the blocking and unblocking of agents already on the payroll. These modules are complex and very interesting from a development standpoint.</p>
                 </div>
                 <div class="featured-shots">
                     <img src="img/AddAgentFP.PNG" alt="Engagement Paie — ajout d'un agent">
@@ -264,7 +268,7 @@
     <section class="section skills" id="skill">
         <div class="container">
             <div class="section-head section-head--center reveal">
-                <h2 class="section-title">Technologies I <span class="accent-text">work with</span></h2>
+                <h2 class="section-title" data-i18n="skills.title">Technologies I <span class="accent-text">work with</span></h2>
             </div>
             <div class="skills-grid" id="skills-grid">
                 <!-- Skills are injected by js/agenio.js -->
@@ -278,26 +282,26 @@
     <section class="section" id="portfolio">
         <div class="container">
             <div class="section-head section-head--center reveal">
-                <h2 class="section-title">Selected <span class="accent-text">projects</span></h2>
+                <h2 class="section-title" data-i18n="work.title">Selected <span class="accent-text">projects</span></h2>
             </div>
             <div class="filters" id="filters">
-                <button class="active" data-filter="*">All</button>
+                <button class="active" data-filter="*" data-i18n="filter.all">All</button>
                 <button data-filter="mobile">Mobile</button>
                 <button data-filter="web">Web</button>
                 <button data-filter="desktop">Desktop</button>
                 <button data-filter="trading">Trading</button>
             </div>
             <div class="work-grid" id="work-grid">
-                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/Mobil-removebg-preview.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/mobil4.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/Mobil-removebg-preview.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.mobile">Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/mobil4.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.mobile">Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
                 <figure class="work-item" data-cat="web" style="margin:0"><img src="img/loginFP.PNG" alt="Engagement Paie — login" loading="lazy"><figcaption class="work-info"><div><strong>Engagement Paie</strong><small>Web · .NET</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
                 <figure class="work-item" data-cat="web" style="margin:0"><img src="img/AddAgentFP.PNG" alt="Engagement Paie — add agent" loading="lazy"><figcaption class="work-info"><div><strong>Engagement Paie</strong><small>Web · .NET</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/mobil2.jpg" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/Mobil3-removebg-preview.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="desktop" style="margin:0"><img src="img/Desktop-removebg-preview.png" alt="Desktop app" loading="lazy"><figcaption class="work-info"><div><strong>Desktop App</strong><small>Windows · macOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="desktop" style="margin:0"><img src="img/DestopAndWeb-removebg-preview.png" alt="Desktop and web app" loading="lazy"><figcaption class="work-info"><div><strong>Desktop &amp; Web</strong><small>Cross-platform</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="trading" style="margin:0"><img src="img/Trading.png" alt="Forex trading" loading="lazy"><figcaption class="work-info"><div><strong>Forex Trading</strong><small>Results</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
-                <figure class="work-item" data-cat="trading" style="margin:0"><img src="img/Trading2.png" alt="Forex trading" loading="lazy"><figcaption class="work-info"><div><strong>Forex Trading</strong><small>Results</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/mobil2.jpg" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.mobile">Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/Mobil3-removebg-preview.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.mobile">Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="desktop" style="margin:0"><img src="img/Desktop-removebg-preview.png" alt="Desktop app" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.desktop">Desktop App</strong><small>Windows · macOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="desktop" style="margin:0"><img src="img/DestopAndWeb-removebg-preview.png" alt="Desktop and web app" loading="lazy"><figcaption class="work-info"><div><strong>Desktop &amp; Web</strong><small data-i18n="work.cross">Cross-platform</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="trading" style="margin:0"><img src="img/Trading.png" alt="Forex trading" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.forex">Forex Trading</strong><small data-i18n="work.results">Results</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="trading" style="margin:0"><img src="img/Trading2.png" alt="Forex trading" loading="lazy"><figcaption class="work-info"><div><strong data-i18n="work.forex">Forex Trading</strong><small data-i18n="work.results">Results</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
             </div>
         </div>
     </section>
@@ -316,7 +320,7 @@
     <section class="section testimonials" id="testimonial">
         <div class="container">
             <div class="section-head section-head--center reveal">
-                <h2 class="section-title">What my <span class="accent-text">clients say</span></h2>
+                <h2 class="section-title" data-i18n="testi.title">What my <span class="accent-text">clients say</span></h2>
             </div>
             <div class="testi-wrap reveal">
                 <div class="testi-slider">
@@ -355,9 +359,9 @@
     <section class="section" style="padding-bottom:0;">
         <div class="container">
             <div class="cta reveal">
-                <h2>Let's build your next project</h2>
-                <p>Web, mobile, desktop or back-end — I turn your ideas into fast, robust and elegant software.</p>
-                <a href="https://wa.me/+243997916872" class="btn btn--primary">Chat on WhatsApp <span class="btn-icon"><i class="fab fa-whatsapp"></i></span></a>
+                <h2 data-i18n="cta.t">Let's build your next project</h2>
+                <p data-i18n="cta.p">Web, mobile, desktop or back-end — I turn your ideas into fast, robust and elegant software.</p>
+                <a href="https://wa.me/+243997916872" class="btn btn--primary"><span data-i18n="btn.whatsapp">Chat on WhatsApp</span> <span class="btn-icon"><i class="fab fa-whatsapp"></i></span></a>
             </div>
         </div>
     </section>
@@ -368,23 +372,23 @@
     <section class="section" id="contact">
         <div class="container">
             <div class="section-head reveal">
-                <h2 class="section-title">Got a project? <span class="accent-text">Let's talk</span></h2>
+                <h2 class="section-title" data-i18n="contact.title">Got a project? <span class="accent-text">Let's talk</span></h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <a class="contact-line" href="tel:+243997916872"><span class="ic"><i class="fas fa-phone-alt"></i></span><div><span>Phone</span><strong>+243 997916872</strong></div></a>
+                    <a class="contact-line" href="tel:+243997916872"><span class="ic"><i class="fas fa-phone-alt"></i></span><div><span data-i18n="info.phone">Phone</span><strong>+243 997916872</strong></div></a>
                     <a class="contact-line" href="mailto:joelmuhindok@gmail.com"><span class="ic"><i class="fas fa-envelope"></i></span><div><span>Email</span><strong>joelmuhindok@gmail.com</strong></div></a>
-                    <a class="contact-line" href="https://wa.me/+243997916872"><span class="ic"><i class="fab fa-whatsapp"></i></span><div><span>WhatsApp</span><strong>Leave me a message</strong></div></a>
-                    <div class="contact-line"><span class="ic"><i class="fas fa-map-marker-alt"></i></span><div><span>Address</span><strong>10B Maindombe, Kinsuka Pecheur, Ngaliema, Kinshasa</strong></div></div>
+                    <a class="contact-line" href="https://wa.me/+243997916872"><span class="ic"><i class="fab fa-whatsapp"></i></span><div><span>WhatsApp</span><strong data-i18n="contact.leave">Leave me a message</strong></div></a>
+                    <div class="contact-line"><span class="ic"><i class="fas fa-map-marker-alt"></i></span><div><span data-i18n="info.address">Address</span><strong>10B Maindombe, Kinsuka Pecheur, Ngaliema, Kinshasa</strong></div></div>
                 </div>
                 <form class="contact-form reveal" id="contactForm" novalidate>
                     <div class="form-row">
-                        <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" required></div>
-                        <div class="field"><label for="email">Your email</label><input type="email" id="email" name="email" required></div>
+                        <div class="field"><label for="name" data-i18n="form.name">Your name</label><input type="text" id="name" name="name" required></div>
+                        <div class="field"><label for="email" data-i18n="form.email">Your email</label><input type="email" id="email" name="email" required></div>
                     </div>
-                    <div class="field"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div>
+                    <div class="field"><label for="subject" data-i18n="form.subject">Subject</label><input type="text" id="subject" name="subject" required></div>
                     <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
-                    <button type="submit" class="btn btn--primary">Send message <span class="btn-icon"><i class="fas fa-paper-plane"></i></span></button>
+                    <button type="submit" class="btn btn--primary"><span data-i18n="btn.send">Send message</span> <span class="btn-icon"><i class="fas fa-paper-plane"></i></span></button>
                     <div class="form-status" id="form-status" role="status"></div>
                 </form>
             </div>
@@ -400,7 +404,7 @@
             <p class="footer-tagline">IngenieurGrandPublic</p>
             <div class="footer-bottom">
                 <a href="#home" class="logo">JMK<span>.</span></a>
-                <p>&copy; <span id="year"></span> JMK. All Rights Reserved.</p>
+                <p>&copy; <span id="year"></span> JMK. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
                 <div class="socials">
                     <a href="https://wa.me/+243997916872" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.facebook.com/joel.kirengo?mibextid=LQQJ4d" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -417,7 +421,8 @@
 
     <!-- JavaScript -->
     <script src="lib/typed/typed.min.js"></script>
-    <script src="js/agenio.js?v=20261003"></script>
+    <script src="js/i18n.js?v=20261004"></script>
+    <script src="js/agenio.js?v=20261004"></script>
 </body>
 
 </html>

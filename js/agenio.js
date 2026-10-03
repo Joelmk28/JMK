@@ -44,16 +44,22 @@
     sections.forEach(function (s) { if (s) spy.observe(s); });
 
 
-    // Typed text
-    if (window.Typed) {
-        new Typed(".typed-text-output", {
-            strings: ["Full stack developer", "Trader", "Web Developer", "iOS Developer", "Android Developer", "Desktop Developer"],
+    // Typed text, restarted in the right language when it changes
+    var i18n = window.JMK_I18N;
+    var typed = null;
+    function startTyped() {
+        if (!window.Typed) return;
+        if (typed) typed.destroy();
+        typed = new Typed(".typed-text-output", {
+            strings: i18n.t("roles"),
             typeSpeed: 80,
             backSpeed: 30,
             backDelay: 1600,
             loop: true
         });
     }
+    startTyped();
+    document.addEventListener("langchange", startTyped);
 
 
     // Skills
@@ -206,13 +212,13 @@
         var message = document.getElementById("message").value.trim();
         if (!name || !email || !subject || !message) {
             status.style.color = "#ff6b6b";
-            status.textContent = "Please fill in all fields.";
+            status.textContent = i18n.t("formMissing");
             return;
         }
         var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
         window.location.href = "mailto:joelmuhindok@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
         status.style.color = "";
-        status.textContent = "Your mail app is opening. You can also call me or leave me a WhatsApp message.";
+        status.textContent = i18n.t("formSent");
         form.reset();
     });
 
