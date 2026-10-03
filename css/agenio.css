@@ -377,6 +377,7 @@ p { margin: 0 0 1em; color: var(--muted); }
     place-items: center;
 }
 .skill-card .logo-wrap img { max-height: 56px; object-fit: contain; }
+.skill-card .logo-wrap.logo-fallback { font-family: var(--font-head); font-weight: 800; font-size: 20px; color: var(--text); }
 .skill-card span { font-family: var(--font-head); font-size: 15px; font-weight: 600; }
 
 /* ---------- Portfolio ---------- */

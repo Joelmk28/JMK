@@ -67,6 +67,8 @@
         { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png", name: ".NET" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", name: "Python" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg", name: "Rust" },
+        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg", name: "Angular" },
+        { src: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/modelcontextprotocol.svg", name: "MCP" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg", name: "WordPress" },
         { src: "https://avatars.githubusercontent.com/u/67620218?s=280&v=4", name: "AppSmith" },
         { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/640px-ChatGPT-Logo.svg.png", name: "ChatGPT" }
@@ -81,6 +83,11 @@
         img.src = skill.src;
         img.alt = skill.name;
         img.loading = "lazy";
+        // If a logo cannot be loaded, show the skill's initials instead
+        img.onerror = function () {
+            wrap.textContent = skill.name.replace(/[^A-Za-z]/g, "").slice(0, 3).toUpperCase();
+            wrap.classList.add("logo-fallback");
+        };
         var name = document.createElement("span");
         name.textContent = skill.name;
         wrap.appendChild(img);
