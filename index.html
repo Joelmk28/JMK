@@ -3,351 +3,417 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Joel Muhindo Kirengo — JMK</title>
+    <title>JMK - Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Joel Muhindo Kirengo, software engineer, full stack, .NET, web, mobile, desktop, Kinshasa" name="keywords">
-    <meta content="Joel MUHINDO KIRENGO (JMK) — software engineer in Kinshasa: web, mobile and desktop applications, back-end, and Forex trading." name="description">
-    <meta name="color-scheme" content="light">
+    <meta content="Portfolio of Joel MUHINDO KIRENGO (JMK) — full stack software engineer: web, mobile, desktop apps and Forex trading." name="description">
+    <meta name="theme-color" content="#ffffff">
 
+    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="css/jmk.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Theme Stylesheet -->
+    <link href="css/agenio.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Top bar -->
-    <header class="topbar">
-        <div class="wrap">
-            <a href="#top" class="brand">JMK</a>
-            <nav id="nav" class="mono" aria-label="Index">
-                <a href="#profile"><span>01</span>Profile</a>
-                <a href="#services"><span>02</span>Services</a>
-                <a href="#case"><span>03</span>Case study</a>
-                <a href="#journey"><span>04</span>Journey</a>
-                <a href="#skills"><span>05</span>Skills</a>
-                <a href="#work"><span>06</span>Work</a>
-                <a href="#words"><span>07</span>Clients</a>
-                <a href="#contact"><span>08</span>Contact</a>
+    <!-- Header Start -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#home" class="logo">JMK<span>.</span></a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Services</a>
+                <a href="#qualification">Journey</a>
+                <a href="#skill">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#testimonial">Reviews</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <span class="clock mono" id="clock">Kinshasa —:—</span>
-            <button class="menu-btn mono" id="menu-btn" aria-expanded="false" aria-controls="nav">Index</button>
+            <a href="tel:+243997916872" class="btn btn--primary header-cta">Call me <span class="btn-icon"><i class="fas fa-phone-alt"></i></span></a>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
         </div>
     </header>
+    <!-- Header End -->
 
 
-    <!-- Masthead -->
-    <header class="masthead wrap" id="top">
-        <div class="meta-row mono">
-            <span>Portfolio — Édition <span id="edition"></span></span>
-            <span>Kinshasa, R.D. Congo</span>
-            <span>Software engineer &amp; trader</span>
-        </div>
-        <h1>Joel Muhindo<br><em>Kirengo</em></h1>
-        <div class="rule-double"></div>
-    </header>
-
-
-    <!-- Lead -->
-    <div class="wrap">
-    <section class="lead" aria-label="Introduction">
-        <figure>
-            <img src="img/imageAccueilPortFolio.jpg" alt="Joel Muhindo Kirengo, standing in a garden in Kinshasa">
-            <figcaption class="mono">Fig. 1 — The engineer, Kinshasa.</figcaption>
-        </figure>
-        <div>
-            <p class="standfirst">I write software that <em>improves people’s lives</em> and transforms businesses.</p>
-            <p class="dropcap">Full stack developer working across the web, mobile and desktop — from the interface the user touches to the server logic, the database and the APIs behind it. Currently shipping a payroll-enrolment platform for the Congolese civil service, built in .NET and running in production.</p>
-        </div>
-        <div>
-            <span class="status mono">● Available for freelance</span>
-            <ul class="roles mono">
-                <li><span>Web</span><span>.NET · Spring</span></li>
-                <li><span>Mobile</span><span>Android · iOS</span></li>
-                <li><span>Desktop</span><span>Windows · macOS</span></li>
-                <li><span>Back-end</span><span>APIs · Data</span></li>
-                <li><span>Markets</span><span>Forex</span></li>
-            </ul>
-            <div class="links-stack">
-                <a href="#contact" class="link-arrow">Start a project</a>
-                <a href="tel:+243997916872" class="link-arrow">+243 997 916 872</a>
-            </div>
-        </div>
-    </section>
-    </div>
-
-
-    <!-- 01 Profile -->
-    <section class="chapter wrap" id="profile">
-        <div class="chapter-head">
-            <span class="num">01</span>
-            <h2>Profile</h2>
-        </div>
-        <div class="profile">
-            <figure>
-                <img src="img/joelChoix1.jpg" alt="Joel Muhindo Kirengo smiling at an event" loading="lazy">
-                <figcaption class="mono">Fig. 2 — Joel, at an event.</figcaption>
-            </figure>
-            <div class="body">
-                <p>As a software engineer, I am passionate about solving both complex and simple problems and creating innovative solutions.</p>
-                <p>With the experience I have gained so far in software development, I have developed a particular expertise in various programming languages and technologies. Don’t hesitate to give me new opportunities to contribute to the software inputs in your companies and to the advancement of technology.</p>
-                <p>My goal is to create software that improves people’s lives and transforms businesses. I am recognized for my ability to work in a team and even alone. My rigor and commitment to excellence are unwavering.</p>
-            </div>
-            <dl class="facts">
-                <div><dt class="mono">Name</dt><dd>MUHINDO KIRENGO Joel</dd></div>
-                <div><dt class="mono">Born</dt><dd>28 November 2001</dd></div>
-                <div><dt class="mono">Degree</dt><dd>Licence — Software Engineering</dd></div>
-                <div><dt class="mono">Experience</dt><dd>2 years</dd></div>
-                <div><dt class="mono">Phone</dt><dd><a href="tel:+243997916872">+243 997 916 872</a></dd></div>
-                <div><dt class="mono">Email</dt><dd><a href="mailto:joelmuhindok@gmail.com">joelmuhindok@gmail.com</a></dd></div>
-                <div><dt class="mono">Address</dt><dd>10B Maindombe, Kinsuka Pêcheur, Ngaliema, Kinshasa</dd></div>
-                <div><dt class="mono">Freelance</dt><dd class="accent">Available</dd></div>
-            </dl>
-        </div>
-    </section>
-
-
-    <!-- 02 Services -->
-    <section class="chapter wrap" id="services">
-        <div class="chapter-head">
-            <span class="num">02</span>
-            <h2>Services, <em>in seven parts</em></h2>
-        </div>
-        <div class="services">
-            <details class="service" open>
-                <summary><span class="mono">2.1</span><h3>Showcase sites</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>See this site you're on now? It is also a showcase site. So, in this service, I create showcase sites for you that highlight your business or brand. The goal is to create a website that accurately reflects your brand image and helps you achieve your business objectives.</p></div>
-            </details>
-            <details class="service">
-                <summary><span class="mono">2.2</span><h3>Front-end interfaces</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>You are a Backend developer or not and you need to create or modify interfaces for your system. In this service, I offer you responsive web interfaces with exceptional user experience.</p></div>
-            </details>
-            <details class="service">
-                <summary><span class="mono">2.3</span><h3>Back-end &amp; APIs</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>You are a Front developer, you just need good logic to manage your system? I take care of it and provide you with the server logic, database definition and manipulation and of course, I provide you with reliable and secure APIs.</p></div>
-            </details>
-            <details class="service">
-                <summary><span class="mono">2.4</span><h3>Android apps</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>In this service, I will develop Android applications based on best development practices for applications that are both functional and attractive.</p></div>
-            </details>
-            <details class="service">
-                <summary><span class="mono">2.5</span><h3>iOS apps</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>An application that only runs on Android is good. But also imagine that the same application is running under iOS (iPhone). I'm not talking about the number of users you're going to reach... In this service, it's about creating applications that fully exploit the unique features of Apple devices.</p></div>
-            </details>
-            <details class="service">
-                <summary><span class="mono">2.6</span><h3>Desktop apps</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>Do you want intensive productivity, offline access, data security and feature-demanding needs? I offer the development of powerful and easy-to-use desktop applications for Windows and macOS.</p></div>
-            </details>
-            <details class="service">
-                <summary><span class="mono">2.7</span><h3>Forex trading</h3><span class="toggle mono"></span></summary>
-                <div class="desc"><p>This service offers an investment opportunity in the Forex market. As an experienced trader, I manage investors’ funds with caution and expertise. Investors are invited to invest their money, which will then be used for trading in the Forex market. Profits will be shared based on an agreed percentage. This service is designed for those looking to invest in Forex but do not have the time or expertise to do so themselves. It offers a transparent and professional way to invest in the Forex market.</p></div>
-            </details>
-        </div>
-    </section>
-
-
-    <!-- 03 Case study -->
-    <section class="chapter wrap" id="case">
-        <div class="chapter-head">
-            <span class="num">03</span>
-            <h2>Actuel gros <em>marché</em></h2>
-        </div>
-        <article class="case">
-            <div>
-                <p class="kicker mono accent">Dossier — 2024 · En production</p>
-                <h3>Engagement Paie</h3>
-                <p class="client">Ministère de la Fonction Publique, Modernisation de l’Administration et Innovation du Service Public</p>
-                <div class="columns">
-                    <p>Une application web tournant sur le serveur local, Windows Server, sous IIS, en production. Je l'ai développée en <a href="https://dotnet.microsoft.com/fr-fr/">.NET</a>, une infrastructure multiplateforme de Microsoft ; elle assure rapidité, scalabilité, robustesse… avec des bonnes pratiques.</p>
-                    <p>Cette application gère les enregistrements des nouveaux agents de l'État pour qu'ils soient mécanisés (profiter des salaires de base de l'État par rapport au matricule attribué par son administration), les corrections des noms, corrections des matricules, réajustements de grade, changements d'adresses, blocages et déblocages des agents déjà mécanisés.</p>
-                    <p>Ces modules restent très complexes et intéressants du point de vue développement.</p>
+    <!-- Hero Start -->
+    <section class="hero section" id="home">
+        <span class="glow glow--cyan"></span>
+        <span class="glow glow--violet"></span>
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="eyebrow">Hi, I'm Joel MUHINDO KIRENGO</span>
+                <h1 class="hero-title">Software <span class="gradient-text">engineer</span><br><span class="outline">building</span> solutions</h1>
+                <div class="hero-typed">I'm a <span class="typed-text-output"></span></div>
+                <p class="hero-text">I design and build web, mobile and desktop applications that improve people's lives and transform businesses — with rigor, best practices and an unwavering commitment to excellence.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn--primary">Let's work together <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#portfolio" class="btn btn--ghost">See my work <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
                 </div>
-                <div class="stack mono"><span>.NET</span><span>Windows Server</span><span>IIS</span><span>Gestion des utilisateurs</span></div>
             </div>
-            <div class="case-figs">
-                <figure>
-                    <img src="img/AddAgentFP.PNG" alt="Engagement Paie — formulaire d'ajout d'un agent" loading="lazy" data-zoom>
-                    <figcaption class="mono">Fig. 3 — Enregistrement d’un nouvel agent.</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/loginFP.PNG" alt="Engagement Paie — écran de connexion" loading="lazy" data-zoom>
-                    <figcaption class="mono">Fig. 4 — Écran de connexion.</figcaption>
-                </figure>
+            <div class="hero-visual reveal">
+                <div class="rotating-badge" aria-hidden="true">
+                    <svg viewBox="0 0 120 120">
+                        <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"></path></defs>
+                        <text><textPath href="#circlePath">Available for freelance • Full stack •</textPath></text>
+                    </svg>
+                    <span class="center"><i class="fas fa-arrow-down"></i></span>
+                </div>
+                <div class="hero-photo">
+                    <img src="img/imageAccueilPortFolio.jpg" alt="Joel MUHINDO KIRENGO">
+                </div>
+                <div class="float-card float-card--1">
+                    <span class="ic"><i class="fas fa-code"></i></span>
+                    <div><strong>Full stack</strong><small>Web · Mobile · Desktop</small></div>
+                </div>
+                <div class="float-card float-card--2">
+                    <span class="ic"><i class="fas fa-chart-line"></i></span>
+                    <div><strong>Trader</strong><small>Forex market</small></div>
+                </div>
             </div>
-        </article>
-    </section>
-
-
-    <!-- 04 Journey -->
-    <section class="chapter wrap" id="journey">
-        <div class="chapter-head">
-            <span class="num">04</span>
-            <h2>Education <em>&amp;</em> experience</h2>
-        </div>
-        <table class="ledger">
-            <thead class="mono"><tr><th>Year</th><th>Role</th><th>Notes</th></tr></thead>
-            <tbody>
-                <tr>
-                    <td class="year">2024</td>
-                    <td><h3>Engagement Paie</h3><div class="place mono">Fonction Publique — RDC</div></td>
-                    <td><p>Conception et développement de la plateforme d’enregistrement des agents de l’État, en production sous IIS. See the case study above.</p></td>
-                </tr>
-                <tr>
-                    <td class="year">2023</td>
-                    <td><h3>Web developer intern</h3><div class="place mono">Infoset</div></td>
-                    <td><p>During my journey as a software developer, I had the opportunity to intern at <a href="https://www.infoset.cd/">Infoset</a>, an experience that was extremely valuable to me. At Infoset, I was able to apply my technical skills while learning new work methodologies. I worked on challenging projects that allowed me to understand the importance of collaboration and communication in a professional environment. This experience not only allowed me to strengthen my technical skills, but also honed my ability to solve complex problems and work effectively as part of a team. In short, my internship at Infoset was a pivotal step in my career as a software developer.</p></td>
-                </tr>
-                <tr>
-                    <td class="year">2019–24</td>
-                    <td><h3>Bachelor of Software Engineering</h3><div class="place mono">USCITECH</div></td>
-                    <td><p>I had the privilege of studying at the <a href="https://ascitech.cd/universite">University of Science and Technology (USCITECH)</a>, where I received a solid education in software engineering. My academic journey at USCITECH allowed me to develop a deep understanding of the fundamental principles of computer science, as well as practical skills in programming. I had the opportunity to work on challenging university projects that strengthened my ability to design and implement effective software solutions. My experience at USCITECH was instrumental in shaping my career as a software engineer.</p></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-
-    <!-- 05 Skills -->
-    <section class="chapter wrap" id="skills">
-        <div class="chapter-head">
-            <span class="num">05</span>
-            <h2>Toolkit, <em>by trade</em></h2>
-        </div>
-        <div class="spec">
-            <section>
-                <h3 class="mono">5.1 — Web</h3>
-                <ul><li>HTML</li><li>CSS</li><li>WordPress</li><li>Blazor Server</li></ul>
-            </section>
-            <section>
-                <h3 class="mono">5.2 — Back-end</h3>
-                <ul><li>.NET</li><li>.NET Core</li><li>Spring Boot</li><li>Python</li><li>Rust</li></ul>
-            </section>
-            <section>
-                <h3 class="mono">5.3 — Apps</h3>
-                <ul><li>.NET MAUI</li><li>Android</li><li>iOS</li><li>Windows · macOS</li></ul>
-            </section>
-            <section>
-                <h3 class="mono">5.4 — Tools</h3>
-                <ul><li>AppSmith</li><li>ChatGPT</li><li>IIS</li><li>Windows Server</li></ul>
-            </section>
         </div>
     </section>
+    <!-- Hero End -->
 
 
-    <!-- 06 Work -->
-    <section class="chapter wrap" id="work">
-        <div class="chapter-head">
-            <span class="num">06</span>
-            <h2>Selected <em>work</em></h2>
+    <!-- Marquee Start -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-item">Web Developer <i class="fas fa-star-of-life"></i> iOS Developer <i class="fas fa-star-of-life"></i> Android Developer <i class="fas fa-star-of-life"></i> Desktop Developer <i class="fas fa-star-of-life"></i> Full Stack <i class="fas fa-star-of-life"></i> Trader <i class="fas fa-star-of-life"></i></div>
+            <div class="marquee-item">Web Developer <i class="fas fa-star-of-life"></i> iOS Developer <i class="fas fa-star-of-life"></i> Android Developer <i class="fas fa-star-of-life"></i> Desktop Developer <i class="fas fa-star-of-life"></i> Full Stack <i class="fas fa-star-of-life"></i> Trader <i class="fas fa-star-of-life"></i></div>
         </div>
-        <div class="filters mono" id="filters">
-            <button class="active" data-filter="*">All<sup></sup></button>
-            <button data-filter="mobile">Mobile<sup></sup></button>
-            <button data-filter="web">Web<sup></sup></button>
-            <button data-filter="desktop">Desktop<sup></sup></button>
-            <button data-filter="trading">Trading<sup></sup></button>
+    </div>
+    <div class="marquee marquee--alt" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-item">.NET <i class="fas fa-circle"></i> Spring Boot <i class="fas fa-circle"></i> Blazor <i class="fas fa-circle"></i> .NET MAUI <i class="fas fa-circle"></i> Python <i class="fas fa-circle"></i> Rust <i class="fas fa-circle"></i> WordPress <i class="fas fa-circle"></i> AppSmith <i class="fas fa-circle"></i></div>
+            <div class="marquee-item">.NET <i class="fas fa-circle"></i> Spring Boot <i class="fas fa-circle"></i> Blazor <i class="fas fa-circle"></i> .NET MAUI <i class="fas fa-circle"></i> Python <i class="fas fa-circle"></i> Rust <i class="fas fa-circle"></i> WordPress <i class="fas fa-circle"></i> AppSmith <i class="fas fa-circle"></i></div>
         </div>
-        <div class="works" id="works">
-            <figure class="work" data-cat="mobile"><div class="frame"><img src="img/Mobil-removebg-preview.png" alt="Mobile application screens" loading="lazy"></div><figcaption class="mono"><b>Mobile app</b><span>Android · iOS</span></figcaption></figure>
-            <figure class="work" data-cat="web"><div class="frame"><img src="img/AddAgentFP.PNG" alt="Engagement Paie — add agent" loading="lazy"></div><figcaption class="mono"><b>Engagement Paie</b><span>Web · .NET</span></figcaption></figure>
-            <figure class="work" data-cat="mobile"><div class="frame"><img src="img/mobil4.png" alt="Mobile application screens" loading="lazy"></div><figcaption class="mono"><b>Mobile app</b><span>Android · iOS</span></figcaption></figure>
-            <figure class="work" data-cat="desktop"><div class="frame"><img src="img/Desktop-removebg-preview.png" alt="Desktop application" loading="lazy"></div><figcaption class="mono"><b>Desktop app</b><span>Windows · macOS</span></figcaption></figure>
-            <figure class="work" data-cat="trading"><div class="frame"><img src="img/Trading.png" alt="Forex trading results" loading="lazy"></div><figcaption class="mono"><b>Forex</b><span>Trading</span></figcaption></figure>
-            <figure class="work" data-cat="web"><div class="frame"><img src="img/loginFP.PNG" alt="Engagement Paie — login" loading="lazy"></div><figcaption class="mono"><b>Engagement Paie</b><span>Web · .NET</span></figcaption></figure>
-            <figure class="work" data-cat="mobile"><div class="frame"><img src="img/mobil2.jpg" alt="Mobile application screens" loading="lazy"></div><figcaption class="mono"><b>Mobile app</b><span>Android · iOS</span></figcaption></figure>
-            <figure class="work" data-cat="desktop"><div class="frame"><img src="img/DestopAndWeb-removebg-preview.png" alt="Desktop and web application" loading="lazy"></div><figcaption class="mono"><b>Desktop &amp; web</b><span>Cross-platform</span></figcaption></figure>
-            <figure class="work" data-cat="mobile"><div class="frame"><img src="img/Mobil3-removebg-preview.png" alt="Mobile application screens" loading="lazy"></div><figcaption class="mono"><b>Mobile app</b><span>Android · iOS</span></figcaption></figure>
-            <figure class="work" data-cat="trading"><div class="frame"><img src="img/Trading2.png" alt="Forex trading results" loading="lazy"></div><figcaption class="mono"><b>Forex</b><span>Trading</span></figcaption></figure>
+    </div>
+    <!-- Marquee End -->
+
+
+    <!-- About Start -->
+    <section class="section" id="about">
+        <span class="glow glow--violet" style="width:420px;height:420px;top:10%;right:-200px;"></span>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <img src="img/joelChoix1.jpg" alt="Joel MUHINDO KIRENGO">
+                    <div class="exp-badge">
+                        <strong class="gradient-text">2+</strong>
+                        <span>Years of experience</span>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <span class="eyebrow">About me</span>
+                    <h2 class="section-title">Passionate about solving <span class="gradient-text">complex &amp; simple</span> problems</h2>
+                    <p>As a software engineer, I am passionate about solving both complex and simple problems and creating innovative solutions. With the experience I have gained so far in software development, I have developed a particular expertise in various programming languages and technologies.</p>
+                    <p>Don’t hesitate to give me new opportunities to contribute to the software inputs in your companies and to the advancement of technology. My goal is to create software that improves people’s lives and transforms businesses. I am recognized for my ability to work in a team and even alone. My rigor and commitment to excellence are unwavering.</p>
+                    <div class="info-list">
+                        <div><span>Name</span><strong>MUHINDO KIRENGO Joel</strong></div>
+                        <div><span>Birthday</span><strong>28-11-2001</strong></div>
+                        <div><span>Degree</span><strong>LICENCE</strong></div>
+                        <div><span>Experience</span><strong>2 Years</strong></div>
+                        <div><span>Phone</span><strong>+243 997916872</strong></div>
+                        <div><span>Email</span><strong>joelmuhindok@gmail.com</strong></div>
+                        <div><span>Address</span><strong>10B Maindombe, Kinsuka Pecheur, Ngaliema, Kinshasa</strong></div>
+                        <div><span>Freelance</span><strong style="color:#2e9e44">Available</strong></div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="tel:+243997916872" class="btn btn--primary">Call me <span class="btn-icon"><i class="fas fa-phone-alt"></i></span></a>
+                        <a href="#service" class="btn btn--ghost">Learn more <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="counters">
+                <div class="counter reveal"><strong class="gradient-text" data-count="2">0</strong><span>Years of experience</span></div>
+                <div class="counter reveal"><strong class="gradient-text" data-count="7">0</strong><span>Services offered</span></div>
+                <div class="counter reveal"><strong class="gradient-text" data-count="12">0</strong><span>Technologies mastered</span></div>
+                <div class="counter reveal"><strong class="gradient-text" data-count="3">0</strong><span>Happy clients reviews</span></div>
+            </div>
         </div>
     </section>
+    <!-- About End -->
+
+
+    <!-- Services Start -->
+    <section class="section services" id="service">
+        <span class="glow glow--cyan" style="width:400px;height:400px;top:-100px;left:-150px;"></span>
+        <div class="container">
+            <div class="section-head section-head--center reveal">
+                <span class="eyebrow">My services</span>
+                <h2 class="section-title">What I can <span class="gradient-text">build for you</span></h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <span class="num">01</span>
+                    <div class="service-icon"><i class="fas fa-edit"></i></div>
+                    <h3>Showcase site</h3>
+                    <p>See this site you're on now? It is also a showcase site. So, in this service, I create showcase sites for you that highlight your business or brand. The goal is to create a website that accurately reflects your brand image and helps you achieve your business objectives.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span class="num">02</span>
+                    <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Front-end</h3>
+                    <p>You are a Backend developer or not and you need to create or modify interfaces for your system. In this service, I offer you responsive web interfaces with exceptional user experience.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span class="num">03</span>
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Back-end</h3>
+                    <p>You are a Front developer, you just need good logic to manage your system? I take care of it and provide you with the server logic, database definition and manipulation and of course, I provide you with reliable and secure APIs.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span class="num">04</span>
+                    <div class="service-icon"><i class="fab fa-android"></i></div>
+                    <h3>Android Apps</h3>
+                    <p>In this service, I will develop Android applications based on best development practices for applications that are both functional and attractive.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span class="num">05</span>
+                    <div class="service-icon"><i class="fab fa-apple"></i></div>
+                    <h3>iOS Apps</h3>
+                    <p>An application that only runs on Android is good. But also imagine that the same application is running under iOS (iPhone). I'm not talking about the number of users you're going to reach... In this service, it's about creating applications that fully exploit the unique features of Apple devices.</p>
+                </article>
+                <article class="service-card reveal">
+                    <span class="num">06</span>
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Desktop Apps</h3>
+                    <p>Do you want intensive productivity, offline access, data security and feature-demanding needs? I offer the development of powerful and easy-to-use desktop applications for Windows and macOS.</p>
+                </article>
+                <article class="service-card service-card--wide reveal">
+                    <span class="num">07</span>
+                    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Trading Forex</h3>
+                    <p>This service offers an investment opportunity in the Forex market. As an experienced trader, I manage investors’ funds with caution and expertise. Investors are invited to invest their money, which will then be used for trading in the Forex market. Profits will be shared based on an agreed percentage. This service is designed for those looking to invest in Forex but do not have the time or expertise to do so themselves. It offers a transparent and professional way to invest in the Forex market.</p>
+                </article>
+                <article class="service-card reveal" style="display:flex;flex-direction:column;justify-content:center;">
+                    <h3>Have a project in mind?</h3>
+                    <p style="margin-bottom:24px;">Tell me about it — let's build something great together.</p>
+                    <div><a href="#contact" class="btn btn--primary">Contact me <span class="btn-icon"><i class="fas fa-arrow-right"></i></span></a></div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+
+
+    <!-- Journey (Education & Experience) Start -->
+    <section class="section" id="qualification">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Education &amp; Experience</span>
+                <h2 class="section-title">My <span class="gradient-text">journey</span> so far</h2>
+            </div>
+            <div class="journey-grid">
+                <article class="journey-card reveal">
+                    <span class="tag"><i class="fas fa-graduation-cap"></i> &nbsp;My Education</span>
+                    <h3>Bachelor of Software Engineering</h3>
+                    <div class="meta"><strong>University Of Science and Technology</strong><span class="year">2019 - 2024</span></div>
+                    <p>I had the privilege of studying at the <a href="https://ascitech.cd/universite">University of Science and Technology (USCITECH)</a>, where I received a solid education in software engineering. My academic journey at USCITECH allowed me to develop a deep understanding of the fundamental principles of computer science, as well as practical skills in programming. I had the opportunity to work on challenging university projects that strengthened my ability to design and implement effective software solutions. My experience at USCITECH was instrumental in shaping my career as a software engineer.</p>
+                </article>
+                <article class="journey-card reveal">
+                    <span class="tag"><i class="fas fa-briefcase"></i> &nbsp;My Experience</span>
+                    <h3>Web developer intern</h3>
+                    <div class="meta"><strong>Infoset</strong><span class="year">2023</span></div>
+                    <p>During my journey as a software developer, I had the opportunity to intern at <a href="https://www.infoset.cd/">Infoset</a>, an experience that was extremely valuable to me. At Infoset, I was able to apply my technical skills while learning new work methodologies. I worked on challenging projects that allowed me to understand the importance of collaboration and communication in a professional environment. This experience not only allowed me to strengthen my technical skills, but also honed my ability to solve complex problems and work effectively as part of a team. In short, my internship at Infoset was a pivotal step in my career as a software developer.</p>
+                </article>
+            </div>
+
+            <article class="featured reveal">
+                <div>
+                    <span class="eyebrow">Actuel gros marché</span>
+                    <h3>Engagement Paie</h3>
+                    <div class="meta"><strong>Ministère de la Fonction Publique, Modernisation de l’Administration et Innovation du Service Public</strong> &nbsp;·&nbsp; 2024</div>
+                    <p>Une application web tournant sur le serveur local, Windows Server, sous IIS, en production. Je l'ai développée en <a href="https://dotnet.microsoft.com/fr-fr/">.NET</a>, une infrastructure multiplateforme de Microsoft ; elle assure rapidité, scalabilité, robustesse,... avec des bonnes pratiques. Cette application gère les enregistrements des nouveaux agents de l'État pour qu'ils soient mécanisés (profiter des salaires de base de l'État par rapport au matricule attribué par son administration), les corrections des noms, corrections des matricules, réajustements de grade, changements d'adresses, blocages et déblocages des agents déjà mécanisés. Ces modules restent très complexes et intéressants du point de vue développement.</p>
+                </div>
+                <div class="featured-shots">
+                    <img src="img/AddAgentFP.PNG" alt="Engagement Paie — ajout d'un agent">
+                    <img src="img/loginFP.PNG" alt="Engagement Paie — connexion">
+                    <img src="img/DestopAndWeb-removebg-preview.png" alt="Application desktop et web">
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Journey End -->
+
+
+    <!-- Skills Start -->
+    <section class="section skills" id="skill">
+        <span class="glow glow--violet" style="width:380px;height:380px;bottom:-120px;left:30%;"></span>
+        <div class="container">
+            <div class="section-head section-head--center reveal">
+                <span class="eyebrow">My skills</span>
+                <h2 class="section-title">Technologies I <span class="gradient-text">work with</span></h2>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills are injected by js/agenio.js -->
+            </div>
+        </div>
+    </section>
+    <!-- Skills End -->
+
+
+    <!-- Portfolio Start -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-head section-head--center reveal">
+                <span class="eyebrow">My portfolio</span>
+                <h2 class="section-title">Selected <span class="gradient-text">projects</span></h2>
+            </div>
+            <div class="filters" id="filters">
+                <button class="active" data-filter="*">All</button>
+                <button data-filter="mobile">Mobile</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="desktop">Desktop</button>
+                <button data-filter="trading">Trading</button>
+            </div>
+            <div class="work-grid" id="work-grid">
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/Mobil-removebg-preview.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/mobil4.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="web" style="margin:0"><img src="img/loginFP.PNG" alt="Engagement Paie — login" loading="lazy"><figcaption class="work-info"><div><strong>Engagement Paie</strong><small>Web · .NET</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="web" style="margin:0"><img src="img/AddAgentFP.PNG" alt="Engagement Paie — add agent" loading="lazy"><figcaption class="work-info"><div><strong>Engagement Paie</strong><small>Web · .NET</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/mobil2.jpg" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="mobile" style="margin:0"><img src="img/Mobil3-removebg-preview.png" alt="Mobile app" loading="lazy"><figcaption class="work-info"><div><strong>Mobile App</strong><small>Android · iOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="desktop" style="margin:0"><img src="img/Desktop-removebg-preview.png" alt="Desktop app" loading="lazy"><figcaption class="work-info"><div><strong>Desktop App</strong><small>Windows · macOS</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="desktop" style="margin:0"><img src="img/DestopAndWeb-removebg-preview.png" alt="Desktop and web app" loading="lazy"><figcaption class="work-info"><div><strong>Desktop &amp; Web</strong><small>Cross-platform</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="trading" style="margin:0"><img src="img/Trading.png" alt="Forex trading" loading="lazy"><figcaption class="work-info"><div><strong>Forex Trading</strong><small>Results</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+                <figure class="work-item" data-cat="trading" style="margin:0"><img src="img/Trading2.png" alt="Forex trading" loading="lazy"><figcaption class="work-info"><div><strong>Forex Trading</strong><small>Results</small></div><span class="ic"><i class="fas fa-expand"></i></span></figcaption></figure>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio End -->
 
     <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-        <div class="bar mono">
-            <span id="lb-caption"></span>
-            <div>
-                <button id="lb-prev">← Prev</button>
-                <button id="lb-next">Next →</button>
-                <button id="lb-close">Close ✕</button>
-            </div>
-        </div>
-        <div class="stage"><img src="" alt=""></div>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lb-close" aria-label="Close"><i class="fas fa-times"></i></button>
+        <button class="lb-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <img src="" alt="">
+        <button class="lb-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
     </div>
 
 
-    <!-- 07 Clients -->
-    <section class="chapter wrap" id="words">
-        <div class="chapter-head">
-            <span class="num">07</span>
-            <h2>In their <em>words</em></h2>
-        </div>
-        <div class="quotes">
-            <figure class="quote">
-                <blockquote>I am absolutely impressed with the quality of work provided. The services are exceptional and exceed all my expectations. For my part, the Android and iOS applications for my clients and the desktop application for management in my company are so flexible. Not to mention the precision in the showcase site, everything is done with a level of professionalism and attention to detail that is really appreciable. Thank you for your excellent work.</blockquote>
-                <figcaption class="mono">Elie Kinahwa<span>CEO — EIZI</span></figcaption>
-            </figure>
-            <figure class="quote">
-                <blockquote>My web application is truly amazing! It is not only intuitive and easy to use, but it is also visually appealing. The features are well thought out and perfectly meet my needs. The performance and speed of the application are impressive, which makes the user experience very pleasant. Thank you.</blockquote>
-                <figcaption class="mono">Nathan Kwete<span>CEO — Food Academia</span></figcaption>
-            </figure>
-            <figure class="quote">
-                <blockquote>Je suis très satisfait de ma commande d'application pour l'engagement paie des agents de l'État, une application interactive, robuste, rapide, conviviale avec une gestion solide des utilisateurs.</blockquote>
-                <figcaption class="mono">Joe Kipoy<span>Chef de Bureau — Fonction Publique</span></figcaption>
-            </figure>
-        </div>
-    </section>
-
-
-    <!-- 08 Contact -->
-    <section class="chapter wrap" id="contact">
-        <div class="chapter-head">
-            <span class="num">08</span>
-            <h2>Write to <em>me</em></h2>
-        </div>
-        <div class="contact">
-            <div>
-                <p class="big">Call <a href="tel:+243997916872">+243 997 916 872</a>, message me on <a href="https://wa.me/+243997916872">WhatsApp</a>, or write to <a href="mailto:joelmuhindok@gmail.com">joelmuhindok@<wbr>gmail.com</a>.</p>
-                <p class="mono">10B Maindombe, Kinsuka Pêcheur<br>Ngaliema, Kinshasa — R.D. Congo</p>
+    <!-- Testimonial Start -->
+    <section class="section testimonials" id="testimonial">
+        <span class="glow glow--cyan" style="width:420px;height:420px;top:20%;left:-200px;"></span>
+        <span class="glow glow--violet" style="width:420px;height:420px;bottom:0;right:-200px;"></span>
+        <div class="container">
+            <div class="section-head section-head--center reveal">
+                <span class="eyebrow">Reviews</span>
+                <h2 class="section-title">What my <span class="gradient-text">clients say</span></h2>
             </div>
-            <form class="letter" id="contactForm" novalidate>
-                <p class="salutation">Dear Joel,</p>
-                <div class="line"><label class="mono" for="name">From</label><input type="text" id="name" name="name" autocomplete="name" required></div>
-                <div class="line"><label class="mono" for="email">Reply to</label><input type="email" id="email" name="email" autocomplete="email" required></div>
-                <div class="line"><label class="mono" for="subject">Subject</label><input type="text" id="subject" name="subject" required></div>
-                <textarea id="message" name="message" aria-label="Message" required></textarea>
-                <div class="sign">
-                    <span class="mono">Opens in your mail app</span>
-                    <button type="submit" class="mono">Send letter →</button>
+            <div class="testi-wrap reveal">
+                <div class="testi-slider">
+                    <div class="testi-track" id="testi-track">
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-ic"></i>
+                            <div class="stars">★★★★★</div>
+                            <blockquote>I am absolutely impressed with the quality of work provided. The services are exceptional and exceed all my expectations. For my part, the Android and iOS applications for my clients and the desktop application for management in my company are so flexible. Not to mention the precision in the showcase site, everything is done with a level of professionalism and attention to detail that is really appreciable. I highly recommend these services to anyone looking to improve their online presence or develop quality applications. Thank you for your excellent work.</blockquote>
+                            <div class="testi-author"><span class="avatar">EK</span><div><strong>Elie Kinahwa</strong><small>CEO - EIZI</small></div></div>
+                        </div>
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-ic"></i>
+                            <div class="stars">★★★★★</div>
+                            <blockquote>My web application is truly amazing! It is not only intuitive and easy to use, but it is also visually appealing. The features are well thought out and perfectly meet my needs. The performance and speed of the application are impressive, which makes the user experience very pleasant. Thank you.</blockquote>
+                            <div class="testi-author"><span class="avatar">NK</span><div><strong>Nathan Kwete</strong><small>CEO - Food Academia</small></div></div>
+                        </div>
+                        <div class="testi-card">
+                            <i class="fas fa-quote-right quote-ic"></i>
+                            <div class="stars">★★★★★</div>
+                            <blockquote>Je suis très satisfait de ma commande d'application pour l'engagement paie des agents de l'État, une application interactive, robuste, rapide, conviviale avec une gestion solide des utilisateurs.</blockquote>
+                            <div class="testi-author"><span class="avatar">JK</span><div><strong>Joe KIPOY</strong><small>Chef de Bureau - Fonction Publique</small></div></div>
+                        </div>
+                    </div>
                 </div>
-                <p class="form-status mono" id="form-status" role="status"></p>
-            </form>
+                <div class="testi-nav">
+                    <button id="testi-prev" aria-label="Previous review"><i class="fas fa-arrow-left"></i></button>
+                    <button id="testi-next" aria-label="Next review"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Testimonial End -->
 
 
-    <!-- Colophon -->
-    <footer class="colophon">
-        <div class="wrap">
-            <div>
-                <div class="sig">JMK</div>
-                <p class="mono">&copy; <span id="year"></span> Joel Muhindo Kirengo. Set in Fraunces &amp; IBM Plex.</p>
+    <!-- CTA Start -->
+    <section class="section" style="padding-bottom:0;">
+        <div class="container">
+            <div class="cta reveal">
+                <h2>Let's build your next project</h2>
+                <p>Web, mobile, desktop or back-end — I turn your ideas into fast, robust and elegant software.</p>
+                <a href="https://wa.me/+243997916872" class="btn btn--primary">Chat on WhatsApp <span class="btn-icon"><i class="fab fa-whatsapp"></i></span></a>
             </div>
-            <ul class="mono">
-                <li><a href="https://wa.me/+243997916872">WhatsApp ↗</a></li>
-                <li><a href="https://www.linkedin.com/in/joel-muhindo-kirengo-07b88b220">LinkedIn ↗</a></li>
-            </ul>
-            <ul class="mono">
-                <li><a href="https://www.facebook.com/joel.kirengo">Facebook ↗</a></li>
-                <li><a href="https://www.instagram.com/joelmk_28">Instagram ↗</a></li>
-            </ul>
+        </div>
+    </section>
+    <!-- CTA End -->
+
+
+    <!-- Contact Start -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Contact me</span>
+                <h2 class="section-title">Got a project? <span class="gradient-text">Let's talk</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <a class="contact-line" href="tel:+243997916872"><span class="ic"><i class="fas fa-phone-alt"></i></span><div><span>Phone</span><strong>+243 997916872</strong></div></a>
+                    <a class="contact-line" href="mailto:joelmuhindok@gmail.com"><span class="ic"><i class="fas fa-envelope"></i></span><div><span>Email</span><strong>joelmuhindok@gmail.com</strong></div></a>
+                    <a class="contact-line" href="https://wa.me/+243997916872"><span class="ic"><i class="fab fa-whatsapp"></i></span><div><span>WhatsApp</span><strong>Leave me a message</strong></div></a>
+                    <div class="contact-line"><span class="ic"><i class="fas fa-map-marker-alt"></i></span><div><span>Address</span><strong>10B Maindombe, Kinsuka Pecheur, Ngaliema, Kinshasa</strong></div></div>
+                </div>
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" required></div>
+                        <div class="field"><label for="email">Your email</label><input type="email" id="email" name="email" required></div>
+                    </div>
+                    <div class="field"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div>
+                    <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+                    <button type="submit" class="btn btn--primary">Send message <span class="btn-icon"><i class="fas fa-paper-plane"></i></span></button>
+                    <div class="form-status" id="form-status" role="status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-big">JMK</div>
+            <div class="footer-bottom">
+                <a href="#home" class="logo">JMK<span>.</span></a>
+                <p>&copy; <span id="year"></span> JMK. All Rights Reserved.</p>
+                <div class="socials">
+                    <a href="https://wa.me/+243997916872" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/joel.kirengo?mibextid=LQQJ4d" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/joel-muhindo-kirengo-07b88b220?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/joelmk_28?igsh=MWV3NDVmMDF1cng4ZQ%3D%3D&amp;utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- Footer End -->
 
-    <script src="js/jmk.js"></script>
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="js/agenio.js"></script>
 </body>
 
 </html>
