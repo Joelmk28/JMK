@@ -365,25 +365,18 @@ p { margin: 0 0 1em; color: var(--muted); }
     flex-direction: column;
     align-items: center;
     gap: 14px;
-    padding: 28px 16px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    background: var(--surface);
+    padding: 20px 12px;
     text-align: center;
-    transition: transform .3s ease, border-color .3s ease;
+    transition: transform .3s ease;
 }
-.skill-card:hover { transform: translateY(-6px); border-color: var(--accent); box-shadow: var(--shadow); }
+.skill-card:hover { transform: translateY(-6px); }
 .skill-card .logo-wrap {
     width: 68px;
     height: 68px;
-    border-radius: 18px;
-    background: #fff;
-    border: 1px solid var(--border);
     display: grid;
     place-items: center;
-    padding: 12px;
 }
-.skill-card .logo-wrap img { max-height: 44px; object-fit: contain; }
+.skill-card .logo-wrap img { max-height: 56px; object-fit: contain; }
 .skill-card span { font-family: var(--font-head); font-size: 15px; font-weight: 600; }
 
 /* ---------- Portfolio ---------- */
