@@ -327,8 +327,7 @@ p { margin: 0 0 1em; color: var(--muted); }
 .journey-card {
     padding: 36px;
     border-radius: var(--radius);
-    border: 1px solid var(--border);
-    background: var(--surface);
+    background: var(--surface-2);
 }
 .journey-card .tag {
     display: inline-block;
@@ -340,12 +339,7 @@ p { margin: 0 0 1em; color: var(--muted); }
 }
 .journey-card h3 { font-size: 24px; margin-bottom: 6px; }
 .journey-card .meta { color: var(--text); font-size: 14px; margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 8px 16px; }
-.journey-card .meta .year {
-    padding: 2px 12px;
-    border-radius: 100px;
-    border: 1px solid var(--border-strong);
-    font-size: 13px;
-}
+.journey-card .meta .year { color: var(--accent-text); font-weight: 600; }
 .journey-card a { color: var(--accent); }
 .featured {
     margin-top: 22px;
@@ -354,7 +348,6 @@ p { margin: 0 0 1em; color: var(--muted); }
     gap: 40px;
     padding: 46px;
     border-radius: var(--radius);
-    border: 1px solid var(--border-strong);
     background: var(--surface-2);
     position: relative;
     z-index: 1;
@@ -364,7 +357,7 @@ p { margin: 0 0 1em; color: var(--muted); }
 .featured .meta { color: var(--text); font-size: 14px; margin-bottom: 18px; }
 .featured a { color: var(--accent); }
 .featured-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.featured-shots img { border-radius: var(--radius-sm); border: 1px solid var(--border-strong); aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.featured-shots img { border-radius: var(--radius-sm); aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
 .featured-shots img:first-child { grid-column: span 2; aspect-ratio: 16 / 9; }
 
 /* ---------- Skills ---------- */
